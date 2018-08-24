@@ -1,4 +1,9 @@
 pipeline {
+  stages {stage('install')
+          steps {
+            sh 'brew install docker'
+             }
+         }
   agent {
     docker {image 'goforgold/build-container:latest'} 
   }
