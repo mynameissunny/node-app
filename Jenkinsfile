@@ -1,5 +1,7 @@
 pipeline {
- 
+ agent {
+    sh 'install docker' 
+  }
   agent {
     docker {image 'ununtu'} 
   }
