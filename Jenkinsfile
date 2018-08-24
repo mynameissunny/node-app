@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    docker {
+    docker pull {
       image 'goforgold/build-container:latest'
 
     }  }
