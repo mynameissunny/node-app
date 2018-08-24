@@ -1,9 +1,7 @@
 pipeline {
   agent {
-    docker pull {
-      image 'goforgold/build-container:latest'
-
-    }  }
+    docker {image 'goforgold/build-container:latest'} 
+  }
   stages {
     stage('Build') {
       steps {
