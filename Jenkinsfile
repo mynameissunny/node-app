@@ -1,9 +1,8 @@
 pipeline {
- agent {
-    sh 'install docker' 
-  }
   agent {
-    docker {image 'ununtu'} 
+    docker {
+      image 'goforgold/build-container:latest'
+      }
   }
   stages {
     stage('Build') {
