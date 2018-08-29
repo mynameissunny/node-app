@@ -1,9 +1,7 @@
 pipeline {
   agent {
-    docker {
-      image 'goforgold/build-container:latest'
-      }
-  }
+        docker { image 'node:7-alpine' }
+    }
   stages {
     stage('Build') {
       steps {
