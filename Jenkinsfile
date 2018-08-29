@@ -1,6 +1,6 @@
 pipeline {
   agent {
-        docker { image 'hello-world' }
+        docker { image 'goforgold/build-container:latest' }
     }
   stages {
     stage('Build') {
